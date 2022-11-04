@@ -1,0 +1,63 @@
+.bg-navy{
+    background-color: #1A2750E0;
+    
+    /* z-index: ; */
+    position:fixed;
+}
+
+.fa-brands{
+    line-height: 200px;
+    font-weight: 400px;
+}
+.logoheader{
+    position: absolute!important;
+    background-color: #1a2750e0;
+    padding: 29px 20px;
+    width: 145px;
+    border-radius: 10px;
+    /* /* top: 0; left: 0; */
+     z-index: 10; 
+}
+
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* font: 2em sans-serif; */
+    color: white;
+  }
+  .centered h1{
+        font-size: 3em;
+  }
+  .centered .btn{
+    
+    text-decoration: none;
+    font-size: 1em;
+      
+    color: white;
+    background-color: transparent;
+    border: 3px solid white;
+    margin-left: 35%;
+
+  }
+  .service-title{
+    /* size: 20px; */
+    font-size: 3rem;
+    color: #1D2A52;
+    text-align: left!important;
+  }
+.why-us h3{
+  text-align: center;
+  font-size: 3rem;
+    color: #1D2A52;
+    font-weight: 600;
+
+}
+/* media query starts */
+@media screen and (max-width: 480px) {
+    .logoheader{
+        display: none;
+    }
+  }
