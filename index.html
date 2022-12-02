@@ -1,50 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="assets/bootstrap5/css/bootstrap.min.css">
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.2.0-web/css/all.min.css">
-    <!-- owl carousel min.css-->
-    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/animations.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/bootstrap5/css/bootstrap.min.css">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="./assets/font/fontawesome-free-6.2.0-web/css/all.min.css">
+  <!-- owl carousel min.css-->
+  <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Public+Sans:ital@1&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-    <!-- header starts -->
-   <header>
-    
+  <!-- header starts -->
+  <header>
+
     <div class="header-top-area d-md-block d-none">
       <div class="container position-relative ">
-      <a href="#">
-        <img src="./assets/img/11company_logo.png" alt="" class="logoheader">
-      </a> 
+        <a href="#">
+          <img src="./assets/img/11company_logo.png" alt="" class="logoheader">
+        </a>
       </div>
     </div>
-        <div class="container-fluid d-flex justify-content-end py-3">
-         
-            <ul class="list-group list-group-horizontal ">
-              <li class="list-group-item  "><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
-              <li class="list-group-item"><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
-              <li class="list-group-item"><a href="#"><i class="fa-brands fa-square-youtube"></i></a></li>
-            </ul>
-    
-    </div> 
+    <div class="container-fluid  top-container justify-content-end py-3 ">
+
+      <ul class="nav justify-content-end social-icons ">
+        <li class="nav-item  "><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+        <li class="nav-item "><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+        <li class="nav-item "><a href="#"><i class="fa-brands fa-square-youtube"></i></a></li>
+      </ul>
+
+    </div>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-navy position-relative">
-      <div class="container-fluid ">
-        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar  navbar-expand-lg navbar-dark bg-navy ">
+      <div id="navbar" class="container-fluid nav  ">
+        <a class="navbar-brand ms-3" href="#">
+          <img id="logo" class="navbar-logo" src="./assets/img/11company_logo.png" alt="">
+        </a>
+
+
+
+
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse"  id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto pt-3 pb-3 h5">
-            <li class="nav-item pe-3">
+
+            
+
+            <li class="nav-item pe-2">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item ps-2 pe-2">
@@ -54,126 +72,512 @@
               <a class="nav-link active" aria-current="page" href="#">Catering</a>
             </li>
             <li class="nav-item ps-2 pe-2">
-              <a class="nav-link" href="#">Features</a>
+              <!-- <a class="nav-link active" aria-current="page" href="#">Events</a> -->
+
+              <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button> -->
+            <li class="nav-item ps-2 pe-2  dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Events
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item" href="#">Wedding</a></li>
+                <li><a class="dropdown-item" href="#">Corporate Events</a></li>
+                <li><a class="dropdown-item" href="#">Cultural Events</a></li>
+                <li><a class="dropdown-item" href="#">Fair And Exhibition</a></li>
+                <!-- <li><a class="dropdown-item" href="#">
+                 <i class="fa-sharp bg-light fa-solid fa-magnifying-glass me-4"></i>
+                </li>
+                </a></li> -->
+
+              </ul>
+            </li>
+
             </li>
             <li class="nav-item ps-2 pe-2">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link active" href="#">Gallery</a>
             </li>
             <li class="nav-item ps-2 pe-2">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              <a class="nav-link active" href="#">Contact</a>
             </li>
+            <li class="nav-item pe-2">
+              <div class="nav-search">
+               
+                <div class="search-container">
+                  <form action="#">
+                    <!-- <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button> -->
+                    <form>
+                      <input type="text"  name="search" placeholder="Search..">
+                    </form>
+                  </form>
+                </div>
+              </div>
+              
+            </li>
+
           </ul>
+
+          <li class="nav-item ps-2 pe-2">
+
+          </li>
+
+        </div>
+        <label for="search-terms" id="search-label"><i
+            class="fa-sharp search fa-solid fa-magnifying-glass me-4"></i></label>
+
+    </nav>
+  </header>
+  <!-- header ends -->
+  <!-- main starts -->
+  <main>
+    <!-- banner starts -->
+    <section class="home-banner-area ">
+      <div class="owl-carousel slide owl-theme">
+        <div class="item">
+          <img src="./assets/img/16sliderImage.jpg" alt="" srcset="">
+          <div class="centered ">
+            <h1>Wedding Show</h1>
+            <a href="#" class="btn">Book Now</a>
+          </div>
+        </div>
+        <div class="item">
+          <img class="img" src="./assets/img/17sliderImage.jpg" alt="" srcset="">
+          <div class="centered ">
+            <h1>Fashion Show</h1>
+            <a href="#" class="btn">Book Now</a>
+          </div>
+        </div>
+
+
+      </div>
+
+    </section>
+    <!-- banner ends -->
+
+    <!-- service area starts -->
+    <section class="service-area my-4">
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-6 col-sm-order-last">
+            <div class="service-title">Services</div>
+            <p class="para">Everyone has a unique vision for their big event, with specific ideas for decor, catering,
+              lighting, entertainment, colour schemes and more. Our versatile event venue can be transformed to
+              accommodate the preferred look and tone. We have a wide variety of furnishings, linens, tableware and
+              lights to choose from, and our catering team will work with clients to create a menu that’s absolutely
+              perfect. We can also suggest vendors for the event, such as a florist or live band, along with a range of
+              vetted professional vendors. We take event planning ideas very seriously, and we will do our best to
+              provide everything necessary for the chosen vision to come together.</p>
+          </div>
+          <div class="col-md-6 col-sm-order-first service-img">
+            <img src="./assets/img/1serviceImage.jpg" alt="" srcset="">
+          </div>
         </div>
       </div>
-    </nav>
-   </header>
-<!-- header ends -->
-<!-- main starts -->
-<main>
-  <!-- banner starts -->
-<section class="home-banner-area ">
-  <div class="owl-carousel owl-theme">
-    <div class="item">
-      <img src="./assets/img/16sliderImage.jpg" alt="" srcset="">
-      <div class="centered ">
-        <h1>Wedding Show</h1>
-        <a href="#" class="btn">Book Now</a>
-      </div>
+    </section>
+    <!-- service area ends -->
+    <div>
+      <img class="wave-img" src="./assets/img/bottom-shape-1.png" alt="" srcset="">
     </div>
-    <div class="item">
-      <img src="./assets/img/16sliderImage.jpg" alt="" srcset="">
-      <div class="centered ">
-        <h1>Wedding Show</h1>
-        <a href="#" class="btn">Book Now</a>
-      </div>
-    </div>
- 
-   
-</div>
-
-</section>
-<!-- banner ends -->
-
-<!-- service area starts -->
-<section class="service-area my-4">
-  <div class="container-md ">
-    <div class="row">
-      <div class="col">
-        <div class="service-title">Services</div>
-        <p>Everyone has a unique vision for their big event, with specific ideas for decor, catering, lighting, entertainment, colour schemes and more. Our versatile event venue can be transformed to accommodate the preferred look and tone. We have a wide variety of furnishings, linens, tableware and lights to choose from, and our catering team will work with clients to create a menu that’s absolutely perfect. We can also suggest vendors for the event, such as a florist or live band, along with a range of vetted professional vendors. We take event planning ideas very seriously, and we will do our best to provide everything necessary for the chosen vision to come together.</p>
-      </div>
-      <div class="col">
-        <img src="./assets/img/1serviceImage.jpg" alt="" srcset="">
-      </div>
-    </div>
-  </div>
-</section>
-<!-- service area ends -->
-<div class="wave">
-  <img src="./assets/img/bottom-shape-1.png" alt="" srcset="">
-</div>
-<!-- why choose us area starts -->
-<section class="home-why-choose-us pt-80 pb-80">
-<div class="container my-4">
-  <div class="service-title why-us"><h3>Why Us</h3></div>
-        <p>Why choose B.R.C.C. to host your event? Not only do we provide some of the most beautiful and spacious banquet halls in Dhaka, we also offer client service that is both friendly and professional. Our team has excellent communication skills, and will work toward achieving the perfect vision.<br />
+    <!-- why choose us area starts -->
+    <section class="home-why-choose-us pt-80 pb-80">
+      <div class="container my-4">
+        <div class="service-title why-us">
+          <h3>Why Us</h3>
+        </div>
+        <p class="para">Why choose B.R.C.C. to host your event? Not only do we provide some of the most beautiful and
+          spacious banquet halls in Dhaka, we also offer client service that is both friendly and professional. Our team
+          has excellent communication skills, and will work toward achieving the perfect vision.<br />
           <br />
-          No matter what the type of event is, a wedding, birthday, corporate events, we will do everything we can to help it take shape. From the catering to the d&eacute;cor to the amenities, our team will be involved in every step of the way to make all the hard work and planning pay off. Every event is unique, with its own story and requirements, and our team understands how to meet the needs of every specific client. We love seeing our clients&rsquo; vision come together to create stunning events that become lifetime memories for everyone involved.<br />
+          No matter what the type of event is, a wedding, birthday, corporate events, we will do everything we can to
+          help it take shape. From the catering to the d&eacute;cor to the amenities, our team will be involved in every
+          step of the way to make all the hard work and planning pay off. Every event is unique, with its own story and
+          requirements, and our team understands how to meet the needs of every specific client. We love seeing our
+          clients&rsquo; vision come together to create stunning events that become lifetime memories for everyone
+          involved.<br />
           <br />
-          We understand that all events are very special, and that&rsquo;s why we go the extra mile to help make everything go as smoothly and correctly as we possibly can. If you&rsquo;re looking for a banquet hall with the best ambiance, cuisine, and service, B.R.C.C. is what you&rsquo;ve been searching for.</p>
+          We understand that all events are very special, and that&rsquo;s why we go the extra mile to help make
+          everything go as smoothly and correctly as we possibly can. If you&rsquo;re looking for a banquet hall with
+          the best ambiance, cuisine, and service, B.R.C.C. is what you&rsquo;ve been searching for.
+        </p>
       </div>
-</div>
-<div class="why-us-cards">
-  <div class="row">
-    <div class="col-md-4">
-      
+
+      <div class="container why-us-card py-3">
+        <div class="row row-cols-1 row-cols-md-3 ">
+          <div class="col-md-3">
+            <div class="card  ">
+              <div class="card-body bg-navy">
+                <div class="row py-3">
+                  <div class="col-3 py-3">
+                    <i class="fab fa-accusoft"></i>
+                  </div>
+                  <div class="col">
+                    <h5>CCTV Coverage</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-3">
+            <div class="card  ">
+              <div class="card-body">
+                <div class="row py-3">
+                  <div class="col-3 py-3">
+                    <i class="fas fa-parking "></i>
+                  </div>
+                  <div class="col">
+                    <h5>3500+ Parking</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-3">
+            <div class="card  ">
+              <div class="card-body bg-navy">
+                <div class="row py-3">
+                  <div class="col-3 py-3">
+                    <i class="fas fa-bus  color-white "></i>
+                  </div>
+                  <div class="col">
+                    <h5 style="color: white;">Guest Transportation</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-3">
+            <div class="card  ">
+              <div class="card-body ">
+                <div class="row py-3 ">
+                  <div class="col-3 py-3">
+                    <i class="fas fa-shield-alt  color-navy"></i>
+                  </div>
+                  <div class="col">
+                    <h5>Trained Security</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- second card row -->
+        <div class="row row-cols-1 row-cols-md-3  my-2">
+          <div class="col-md-3">
+            <div class="card  ">
+              <div class="card-body">
+                <div class="row py-3">
+                  <div class="col-3 py-3">
+                    <i class="fas fa-wifi  color-navy"></i>
+                  </div>
+                  <div class="col">
+                    <h5>Highspeed Wifi</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-3">
+            <div class="card  ">
+              <div class="card-body bg-navy">
+                <div class="row py-3 ">
+                  <div class="col-3 py-3">
+                    <i class="fas fa-users  color-white"></i>
+                  </div>
+                  <div class="col">
+                    <h5>Trained Staffs</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-3">
+            <div class="card  ">
+              <div class="card-body ">
+                <div class="row py-3">
+                  <div class="col-3 py-3">
+                    <i class="fas fa-poll  color-navy"></i>
+                  </div>
+                  <div class="col">
+                    <h5>Modern Amenities</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-3">
+            <div class="card  ">
+              <div class="card-body bg-navy">
+                <div class="row py-3 ">
+                  <div class="col-3 py-3">
+                    <i class="fas fa-users-cog  color-white "></i>
+                  </div>
+                  <div class="col">
+                    <h5>Quality Services</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+
+      </div>
+      </div>
+    </section>
+    <!-- why choose us area ends -->
+    <!-- set your goals starts -->
+    <section class="set-your-goals">
+      <!-- <div class="image-back">
+    <img src="./assets/img/17sliderImage.jpg" alt="" srcset="">
+  </div> -->
+      <div class="container ">
+        <div class="row s-back-img my-4">
+          <div class="col col-md-4 goals bg-navy my-5  px-3 py-3 ">
+            <div class="set-your-goal-title">
+              <h1>set your goal and run towards us</h1>
+            </div>
+            <p class="cap ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium libero mollitia
+              tenetur,
+              pariatur at, voluptatum, qui doloremque earum adipisci dignissimos aliquid illum neque beatae? Ipsum
+              veniam fugit harum aperiam eum!</p>
+            <button type="button" class="btn sbtn rounded-pill btn-primary btn-md ms-3">Large button</button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- set your goals ends -->
+    <!-- occational showcase area starts-->
+    <section class="ocational-showcase-area my-4">
+      <div class="container">
+        <div class="col">
+          <div class="text-center my-3">
+            <h1 class="title"><span class="text position-relative">Occasion Showcase</span> </h1>
+  
+          </div>
+        </div>
+        
+        <div class="cards">
+          <div class="row">
+            <div class="col-sm-6 col-md-4">
+              <div class="card">
+                <img src="./assets/img/occationalimg1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <p class="links"><a href="#">Read More</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="card middle-card">
+                <img src="./assets/img/occationalimg2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <p class="links"><a href="#">Read More</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="card">
+                <img src="./assets/img/occationalimg3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <p class="links"><a href="#">Read More</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- occational showcase area ends -->
+    <!-- testimonial section starts -->
+    <section class="testimonials my-4  bg-navy">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="testimonial-title-text">
+              <h6>testimonials</h6>
+            </div>
+            <div class="testimonial-caption">
+              <h1>Our happy customers speaks for us</h1>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="owl-carousel owl-theme">
+              <div class="item text-center">
+                <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, quaerat ut corrupti eveniet ea
+                  unde consectetur temporibus quasi veritatis facilis vel repudiandae perspiciatis cum quas aliquid
+                  voluptate accusamus magni possimus. <br>
+                  <b>John Doe</b>
+                </h5>
+              </div>
+              <div class="item text-center">
+                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate reiciendis iste, obcaecati amet,
+                  modi tempora vel odit quibusdam doloremque reprehenderit ipsa repudiandae aut eaque culpa tenetur
+                  enim, perspiciatis autem aperiam. <br>
+                  <b>John Doe</b>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- testimonial section ends -->
+
+    <!-- planning starts-->
+    <section class="lets-get-planning my-4  ">
+      <div class="container bg-navy">
+        <div class="lgp-title text-center">
+          <h1>Let's Get Planning</h1>
+        </div>
+        <div class="lgp-caption text-center">
+          <p>We’d love to hear your event. Fill out our Event Enquiries form
+            and let’s bring your vision to reality.</p>
+        </div>
+        <div class="lgp-button">
+          <div class="btn-area   text-center">
+            <button type="button" class="btn  btn-left btn-md my-3">Contact Us</button>
+            <button type="button" class="btn  btn-right btn-md my-3">Book Now</button>
+          </div>
+
+          <!-- <a href="#" class="btn btn-left">Contact Us</a> -->
+        </div>
+
+      </div>
+    </section>
+    <!-- palning ends -->
+    <!-- search container starts -->
+    <div id="searchcontainer">
+      <form id="search" action="#" method="post">
+        <input type="text" name="search-terms" id="search-terms" placeholder="Enter search terms...">
+        <div>Press Enter to Search</div>
+      </form>
     </div>
-  </div>
+    <!-- search container ends -->
+
+
+  </main>
+  <!-- main ends -->
+  <!-- footer starts -->
+  <footer>
+    <div class="footer-top-img">
+      <!-- <img src="./assets/img/footer-top.png" alt=""> -->
+    </div>
+
+    <div class="footer-bottom-area bg-navy">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <img class="footer-logo" src="./assets/img/11company_logo.png" alt="" srcset="">
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <h1>About Us</h1>
+            <ul class="links">
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+              <li>
+                <a href="#">Gallery</a>
+              </li>
+
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <h1>Explore Us</h1>
+            <ul class="links">
+              <li>
+                <a href="#">Terms & Comditions</a>
+              </li>
+              <li>
+                <a href="#">Privecy Policy</a>
+              </li>
+              <li>
+                <a href="#">Cookie policy</a>
+              </li>
+
+            </ul>
+          </div>
+          <div class="col-md-3 subscribe-us col-sm-6">
+            <h1>Subscribe Us</h1>
+            <form action="" class="subscribe-form">
+              <input type="text" placeholder="Name">
+              <br>
+              <input type="text" placeholder="Email">
+
+            </form>
+            <!-- <br> -->
+            <div class="d-grid gap-1 ">
+              <button class="btn btn-warning btn-submit" type="button">Button</button>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <p class="copyright">All right reserved by <a href="#">Techcloud ltd</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- <a href="#" class="float">
+      <i class="fa-brands fa-square-facebook b my-float"></i> 
+    </a>
+     -->
+    <div class="sticky-social">
+      <ul class="social">
+        <li class="fb"><a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+            <li class="twitter"><a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+          <li class="insta"><a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+          <li class="pin"><a href="#"><i class="fa-brands fa-pinterest-p" aria-hidden="true"></i></a></li>
+          <li class="vim"><a href="#"><i class="fa-brands fa-vimeo" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+
+
 </div>
-</section>
-<!-- why choose us area ends -->
-<!-- occational showcase area starts-->
-<section class="ocational-showcase-area">
 
-</section>
-<!-- occational showcase area ends -->
-<!-- testimonial section starts -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa-sharp fa-solid fa-arrow-up"></i>
+    </button>
 
-<!-- testimonial section ends -->
+  </footer>
+  <!-- footer ends -->
+  <!-- js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./assets/js/owl.carousel.min.js"></script>
+  <script src="assets/bootstrap5/js/bootstrap.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+  
+
  
-</main>
-<!-- main ends -->
-<!-- footer starts -->
-<footer>
+  
 
-</footer>
-<!-- footer ends -->
-    <!-- js -->
-    <script src="./assets/js/script.js"></script>
-    <script src="assets/bootstrap5/js/bootstrap.min.js"></script>
-    <script src="./assets/js/jquery-3.6.1.min.js"></script>
-    <script src="./assets/js/owl.carousel.min.js"></script>
-    <script type="text/javascript">
-      $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:0,
-    nav:true,
-    autoplay:true,
-    autoplayTimeout:3000,
-    
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
-        }
-    }
-})
-
-    </script>
 </body>
+
 </html>
